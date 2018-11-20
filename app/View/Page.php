@@ -12,7 +12,7 @@ class Page
 
   public function __construct(string $template) {
     $loader = new Twig_Loader_Filesystem(
-      'templates'
+      '../templates'
     );
 
     $this->twig = new Twig_Environment($loader, [
