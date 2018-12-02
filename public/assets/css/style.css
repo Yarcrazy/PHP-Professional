@@ -3,4 +3,8 @@
  * artyom@manchenkoff.me
  * manchenkoff.me © 2018
  */
+.container {
+	margin: 0 auto;
+	width: 1140px;
+}
 

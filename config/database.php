@@ -11,9 +11,9 @@
 return [
     'database' => [
         'driver' => 'pdo_mysql',
-        'host' => 'db',
+        'host' => 'localhost',
         'user' => 'root',
-        'password' => 'root',
+        'password' => '',
         'dbname' => 'geekbrains',
     ],
 ];

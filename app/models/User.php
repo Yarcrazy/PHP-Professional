@@ -8,6 +8,8 @@
 namespace app\models;
 
 use core\base\ActiveRecord;
+use core\services\validators\LoginValidator;
+use core\services\validators\NumberValidator;
 
 /**
  * Class User
@@ -16,10 +18,16 @@ use core\base\ActiveRecord;
  * @property int $id
  * @property string $login
  * @property string $password
- * @property int $last_access
+ * @property string $last_access
  * @property string $username
  */
 class User extends ActiveRecord
 {
-
+    protected function validationRules()
+    {
+        return [
+            'id' => NumberValidator::class,
+            'login' => LoginValidator::class,
+        ];
+    }
 }

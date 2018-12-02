@@ -1,17 +1,7 @@
-<h1>Вход в систему</h1>
+{% extends '/layouts/default.twig' %}
 
-<form method="post">
+{% block content %}
 
-    <p>
-        <input type="text" placeholder="login" name="User[username]" required>
-    </p>
-    <p>
-        <input type="text" placeholder="login" name="User[login]" required>
-    </p>
-    <p>
-        <input type="password" placeholder="login" name="User[password]" required>
-    </p>
+    <h1 style="text-align: center">WELCOME!</h1>
 
-    <button type="submit">OK</button>
-
-</form>
+{% endblock %}
