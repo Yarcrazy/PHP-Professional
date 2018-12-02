@@ -15,5 +15,7 @@ return [
         //'website/path' => ['ControllerClass', 'actionName'],
         '/' => [SiteController::class, 'index'],
         'test' => [SiteController::class, 'postTest'],
+
+        'sign in' => [UserController::class, 'signin'],
     ],
 ];
